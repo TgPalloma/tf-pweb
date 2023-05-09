@@ -1,0 +1,9 @@
+:root {
+    --pri-color:;
+    --sec-color:;
+    --ter-color:;
+}
+
+body {
+    height: 100vh;
+}
