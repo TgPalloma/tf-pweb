@@ -1,9 +1,24 @@
 :root {
-    --pri-color:;
+    --pri-color:#000000;
     --sec-color:;
     --ter-color:;
 }
 
 body {
     height: 100vh;
+}
+
+header {
+    height: 10vh;
+    background-color: blue;
+}
+
+main {
+    height: 80vh;
+    background-color: blueviolet;
+}
+
+footer {
+    height: 10vh;
+    background-color: blue;
 }

@@ -1,10 +1,11 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Cadastro de Cliente - Virtuah Assessoria Remota</title>
+    <link rel="icon" href="./img/logo_virtuah_icone_colorido-removebg-preview.png" type="img/png">
+    <title>Virtuah Assessoria Remota - Cadastro de Cliente</title>
     <link rel="stylesheet" href="./style/reset.css">
     <link rel="stylesheet" href="./style/c_cliente.css">
 </head>
@@ -12,11 +13,88 @@
     <header>
 
     </header>
-    <main>
+        <main>
+            <h2> Cadastro de Cliente</h2>
 
-    </main>
+            <form action="cadastra.php" method="post">
+
+                <div>
+                    <h3>Identificação</h3>
+                    <ul>
+                        <li>CNPJ <input type="text" name="cnpj" placeholder="00.000.000/0000-00" class="exp_cnpj" onkeypress="formatarCNPJ('## ### ###/####-##',this)" maxlength="18"></li>
+                        <li>Formato Juridico
+                            <select nome="tipo_empresa">
+                                <option value="mei">MEI</option>
+                                <option value="ei">EI</option>
+                                <option value="me">ME</option>
+                                <option value="eireli">EIRELI</option>
+                                <option value="ltda">LTDA</option>
+                                <option value="sa">S/A</option>
+                            </select>
+                        </label></li>
+                        <li><input type="text" name="razao_social" placeholder="Nome Social"></li>
+                        <li>Nome Fantasia<input type="text" name="nome_fantasia"></li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h3>Localização</h3>
+                    <ul>
+                        <li>Endereço<input type="text" name="endereco"></li>
+                        <li>Bairro<input type="text" name="bairro"></li>
+                        <li>Cidade<input type="text" name="cidade"></li>
+                        <li>Estado<select id="estado" name="estado">
+                            <option value="AC">Acre</option>
+                            <option value="AL">Alagoas</option>
+                            <option value="AP">Amapá</option>
+                            <option value="AM">Amazonas</option>
+                            <option value="BA">Bahia</option>
+                            <option value="CE">Ceará</option>
+                            <option value="DF">Distrito Federal</option>
+                            <option value="ES">Espírito Santo</option>
+                            <option value="GO">Goiás</option>
+                            <option value="MA">Maranhão</option>
+                            <option value="MT">Mato Grosso</option>
+                            <option value="MS">Mato Grosso do Sul</option>
+                            <option value="MG">Minas Gerais</option>
+                            <option value="PA">Pará</option>
+                            <option value="PB">Paraíba</option>
+                            <option value="PR">Paraná</option>
+                            <option value="PE">Pernambuco</option>
+                            <option value="PI">Piauí</option>
+                            <option value="RJ">Rio de Janeiro</option>
+                            <option value="RN">Rio Grande do Norte</option>
+                            <option value="RS">Rio Grande do Sul</option>
+                            <option value="RO">Rondônia</option>
+                            <option value="RR">Roraima</option>
+                            <option value="SC">Santa Catarina</option>
+                            <option value="SP">São Paulo</option>
+                            <option value="SE">Sergipe</option>
+                            <option value="TO">Tocantins</option>
+                        </select></li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h3>Informações Contato</h3>
+                    <ul>
+                        <li>Telefone 1<input type="tel" name="telefone1"></li>
+                        <li>Telefone 2<input type="tel" name="telefone2"></li>
+                        <li>E-mail 1<input type="email" name="email1"></li>
+                        <li>E-mail 2<input type="email" name="email2"></li>
+                        <li>Nome do Contato<input type="text" name="nomeDoContato"></li>
+                    </ul>
+                </div>
+
+                <button type="submit" value="cadastrar">Cadastrar</button>
+            </form>
+        </main>
     <footer>
 
-    </footer>    
+        <P>By Palloma Muller, Dienifer Menegotto</P>
+        <p>Programação Web Senai</p>
+
+    </footer>
+    <script src="./js/main.js"></script>
 </body>
 </html>
