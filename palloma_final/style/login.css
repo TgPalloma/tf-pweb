@@ -1,0 +1,74 @@
+main {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #E1E1E1;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#apresentation {
+    border: 2px solid orange;
+    border-radius: 10px;
+    height: 60vh;
+    width: 320px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+    gap: 40px;
+}
+
+.logo {
+    width: 60%;
+}
+
+.login_area {
+    display: flex;
+    height: 60%;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between
+    
+}
+
+.text_field {
+    display: flex;
+    flex-direction: column;
+    align-content: stretch;
+}
+
+.text {    
+    margin: 0 0 5px 20px;
+}
+
+.text_field input {
+    border: 2px solid orange;
+    height: 30px;
+    width: 280px;
+    border-radius: 5px;
+}
+
+.forgot_password {
+    margin-top: 5px;
+}
+
+.login_button {
+    border: 2px solid orange;
+    border-radius: 5px;
+    height: 36px;
+    width: 288px;
+    margin-top: 15px;
+}
+
+.login_button:hover {
+    border: 2px solid orange;
+    background-color: rgba(255, 166, 0, 0.753);
+}
+
+.support_messenger {
+    text-align: center;
+    font-size: 13px;
+    margin: 0 30px;
+}

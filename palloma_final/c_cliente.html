@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="./style/reset.css">
     <link rel="stylesheet" href="./style/c_cliente.css">
 </head>
+
 <body>
     <header>
 
@@ -18,7 +19,7 @@
 
             <form action="cadastra.php" method="post">
 
-                <div>
+                <section>
                     <h3>Identificação</h3>
                     <ul>
                         <li>CNPJ <input type="text" name="cnpj" placeholder="00.000.000/0000-00" class="exp_cnpj" onkeypress="formatarCNPJ('## ### ###/####-##',this)" maxlength="18"></li>
@@ -35,9 +36,9 @@
                         <li><input type="text" name="razao_social" placeholder="Nome Social"></li>
                         <li>Nome Fantasia<input type="text" name="nome_fantasia"></li>
                     </ul>
-                </div>
+                </section>
 
-                <div>
+                <section>
                     <h3>Localização</h3>
                     <ul>
                         <li>Endereço<input type="text" name="endereco"></li>
@@ -73,9 +74,9 @@
                             <option value="TO">Tocantins</option>
                         </select></li>
                     </ul>
-                </div>
+                </section>
 
-                <div>
+                <section>
                     <h3>Informações Contato</h3>
                     <ul>
                         <li>Telefone 1<input type="tel" name="telefone1"></li>
@@ -84,7 +85,7 @@
                         <li>E-mail 2<input type="email" name="email2"></li>
                         <li>Nome do Contato<input type="text" name="nomeDoContato"></li>
                     </ul>
-                </div>
+                </section>
 
                 <button type="submit" value="cadastrar">Cadastrar</button>
             </form>

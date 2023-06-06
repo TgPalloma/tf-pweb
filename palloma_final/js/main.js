@@ -17,3 +17,4 @@ function formatarCNPJ(mascara, documento) {
       texto = mascara.substring(i);
     }
   }
+
