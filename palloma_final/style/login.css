@@ -5,10 +5,15 @@ main {
     justify-content: center;
     background-color: #E1E1E1;
     font-family: Arial, Helvetica, sans-serif;
+    background-image: url(../img/esc_int.jpg);
+    background-position: center;
+    background-size: cover;
 }
 
 #apresentation {
     border: 2px solid orange;
+    outline: 5px solid #E1E1E1;
+    background-color: #E1E1E1;
     border-radius: 10px;
     height: 60vh;
     width: 320px;
@@ -22,15 +27,15 @@ main {
 
 .logo {
     width: 60%;
+    margin-top: 20px;
 }
 
 .login_area {
     display: flex;
-    height: 60%;
+    height: 45%;
     flex-direction: column;
     align-items: center;
-    justify-content: space-between
-    
+    justify-content: space-between;
 }
 
 .text_field {
@@ -48,10 +53,15 @@ main {
     height: 30px;
     width: 280px;
     border-radius: 5px;
+    text-indent: 5px;
+}
+
+.text_field input:focus {
+    border: 2px dashed red;
 }
 
 .forgot_password {
-    margin-top: 5px;
+    font-size: 14px;
 }
 
 .login_button {
@@ -60,11 +70,14 @@ main {
     height: 36px;
     width: 288px;
     margin-top: 15px;
+    text-transform: uppercase;
+    font-weight: bolder;
 }
 
 .login_button:hover {
     border: 2px solid orange;
     background-color: rgba(255, 166, 0, 0.753);
+    cursor: pointer;
 }
 
 .support_messenger {
