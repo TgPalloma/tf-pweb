@@ -18,3 +18,4 @@ function formatarCNPJ(mascara, documento) {
     }
   }
 
+
