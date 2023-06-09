@@ -23,16 +23,16 @@
                     <h3>Identificação</h3>
                     <div>
                         <p class="razao_social"><label for="razao_social">Razão Social:</label>
-                        <input id="razao_social" type="text" name="razao_social"></p>
+                        <input required id="razao_social" type="text" name="razao_social"></p>
 
                         <p class="nome_fantasia"><label for="nome_fantasia">Nome Fantasia:</label>
                         <input id="nome_fantasia" type="text" name="nome_fantasia"></p>
 
                         <p><label for="cnpj">CNPJ:</label>
-                        <input id="cnpj" type="text" name="cnpj" placeholder="00.000.000/0000-00" class="exp_cnpj" onkeypress="formatarCNPJ('## ### ###/####-##',this)" maxlength="18">
+                        <input required id="cnpj" type="text" name="cnpj" placeholder="00.000.000/0000-00" class="exp_cnpj" onkeypress="formatarCNPJ('## ### ###/####-##',this)" maxlength="18">
 
                         <label for="formato_juridico">Formato Juridico:</label>
-                        <select nome="tipo_empresa" id="formato_juridico">
+                        <select name="tipo_empresa" id="formato_juridico">
                             <option selected disabled>Selecione</option>
                             <option value="mei">MEI</option>
                             <option value="ei">EI</option>
