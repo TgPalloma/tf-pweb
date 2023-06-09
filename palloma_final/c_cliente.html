@@ -15,36 +15,50 @@
 
     </header>
         <main>
-            <h2> Cadastro de Cliente</h2>
+            <h1> Cadastro de Cliente</h1>
 
             <form action="cadastra.php" method="post">
 
-                <section>
+                <section class="sessao identificacao">
                     <h3>Identificação</h3>
-                    <ul>
-                        <li>CNPJ <input type="text" name="cnpj" placeholder="00.000.000/0000-00" class="exp_cnpj" onkeypress="formatarCNPJ('## ### ###/####-##',this)" maxlength="18"></li>
-                        <li>Formato Juridico
-                            <select nome="tipo_empresa">
-                                <option value="mei">MEI</option>
-                                <option value="ei">EI</option>
-                                <option value="me">ME</option>
-                                <option value="eireli">EIRELI</option>
-                                <option value="ltda">LTDA</option>
-                                <option value="sa">S/A</option>
-                            </select>
-                        </label></li>
-                        <li><input type="text" name="razao_social" placeholder="Nome Social"></li>
-                        <li>Nome Fantasia<input type="text" name="nome_fantasia"></li>
-                    </ul>
+                    <div>
+                        <p class="razao_social"><label for="razao_social">Razão Social:</label>
+                        <input id="razao_social" type="text" name="razao_social"></p>
+
+                        <p class="nome_fantasia"><label for="nome_fantasia">Nome Fantasia:</label>
+                        <input id="nome_fantasia" type="text" name="nome_fantasia"></p>
+
+                        <p><label for="cnpj">CNPJ:</label>
+                        <input id="cnpj" type="text" name="cnpj" placeholder="00.000.000/0000-00" class="exp_cnpj" onkeypress="formatarCNPJ('## ### ###/####-##',this)" maxlength="18">
+
+                        <label for="formato_juridico">Formato Juridico:</label>
+                        <select nome="tipo_empresa" id="formato_juridico">
+                            <option selected disabled>Selecione</option>
+                            <option value="mei">MEI</option>
+                            <option value="ei">EI</option>
+                            <option value="me">ME</option>
+                            <option value="eireli">EIRELI</option>
+                            <option value="ltda">LTDA</option>
+                            <option value="sa">S/A</option>
+                        </select></p>
+                    </div>
                 </section>
 
-                <section>
+                <section class="sessao localizacao">
                     <h3>Localização</h3>
-                    <ul>
-                        <li>Endereço<input type="text" name="endereco"></li>
-                        <li>Bairro<input type="text" name="bairro"></li>
-                        <li>Cidade<input type="text" name="cidade"></li>
-                        <li>Estado<select id="estado" name="estado">
+
+                        <label for="endereco">Endereço:</label>
+                        <input type="text" id="endereco" name="endereco" placeholder="Rua Qualquer uma, 350">
+
+                        <label for="bairro">Bairro:</label>
+                        <input id="bairro" type="text" name="bairro">
+
+                        <label for="cidade">Cidade:</label>
+                        <input id="cidade" type="text" name="endereco">
+
+                        <label for="estado">Estado:</label>
+                        <select id="estado" name="estado">
+                            <option selected disabled>Selecione</option>
                             <option value="AC">Acre</option>
                             <option value="AL">Alagoas</option>
                             <option value="AP">Amapá</option>
@@ -72,23 +86,35 @@
                             <option value="SP">São Paulo</option>
                             <option value="SE">Sergipe</option>
                             <option value="TO">Tocantins</option>
-                        </select></li>
-                    </ul>
+                        </select>
                 </section>
 
-                <section>
+                <section class="sessao contato">
                     <h3>Informações Contato</h3>
-                    <ul>
-                        <li>Telefone 1<input type="tel" name="telefone1"></li>
-                        <li>Telefone 2<input type="tel" name="telefone2"></li>
-                        <li>E-mail 1<input type="email" name="email1"></li>
-                        <li>E-mail 2<input type="email" name="email2"></li>
-                        <li>Nome do Contato<input type="text" name="nomeDoContato"></li>
-                    </ul>
+                    
+                    <labe for="telefone_1">Telefone 1:</labe>
+                    <input id="telefone_1" type="tel" name="telefone1">
+
+                    <labe for="telefone_2">Telefone 2:</labe>
+                    <input id="telefone_2" type="tel" name="telefone2">
+
+                    <label for="email_1">E-mail 1:</label>
+                    <input id="email_1" type="email" name="email1">
+
+                    <label for="email_2">E-mail 2:</label>
+                    <input id="email_2" type="email" name="email2">
+
+                    <label for="contato_1">Contato 1:</label>
+                    <input id="contato_1" type="text" name="nomeDoContato_1">
+
+                    <label for="contato_2">Contato 2:</label>
+                    <input id="contato_2" type="text" name="nomeDoContato_2">
                 </section>
 
-                <button type="submit" value="cadastrar">Cadastrar</button>
-            </form>
+                <button type="submit">Cadastrar</button>
+                <button type="reset">Limpar Campos</button>
+                <a href="listar_cadastros.php"><button>Empresas Cadastradas</button></a>
+            </form>            
         </main>
     <footer>
 
