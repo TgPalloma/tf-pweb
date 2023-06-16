@@ -87,6 +87,6 @@ function formatarCNPJ(mascara, documento) {
       document.getElementById("contato_1").focus();
       return;
   } else {
-      windows.location.href = "cadastra.php";
+      document.getElementById("f").submit();
     }
 }

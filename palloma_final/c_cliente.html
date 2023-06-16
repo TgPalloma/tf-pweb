@@ -17,7 +17,7 @@
         <main>
             <h1> Cadastro de Cliente</h1>
 
-            <form action="cadastra.php" method="post">
+            <form id="f" action="c_cliente.php" method="post">
 
                 <section class="sessao identificacao">
                     <h3>Identificação</h3>
@@ -92,10 +92,10 @@
                 <section class="sessao contato">
                     <h3>Informações Contato</h3>
                     
-                    <labe for="telefone_1">Telefone 1:</labe>
+                    <label for="telefone_1">Telefone 1:</label>
                     <input id="telefone_1" type="tel" name="telefone1">
 
-                    <labe for="telefone_2">Telefone 2:</labe>
+                    <label for="telefone_2">Telefone 2:</label>
                     <input id="telefone_2" type="tel" name="telefone2">
 
                     <label for="email_1">E-mail 1:</label>
@@ -113,7 +113,7 @@
 
                 <input type="button" value="Cadastrar" onclick="validaCadastro()"/>
                 <button type="reset">Limpar Campos</button>
-                <a href="listar_cadastros.php"><button>Empresas Cadastradas</button></a>
+                <button><a href="listar_cadastrados.php">Empresas Cadastradas</a></button>
             </form>            
         </main>
     <footer>
